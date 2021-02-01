@@ -50,7 +50,7 @@ export default function Home() {
         
         <Widget>
           <Widget.Header>
-            <h1>Segunda aula imersão react alura!</h1>
+            <h1>Desafio, eu sou conhecedor de cinema!</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function(infosDoEvento) {
@@ -75,9 +75,9 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-          <h1>Segunda aula imersão alura!</h1>
+          <h1>Será que você realmente sabe?</h1>
           
-          <p>Partiu aprender?</p>
+          <p>Descubra o quanto você realmente conhece sobre cinema. 🍿🍿🍿</p>
           </Widget.Content>
         </Widget>
 

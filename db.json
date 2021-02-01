@@ -1,29 +1,72 @@
 {
-  "bg": "https://images.unsplash.com/photo-1587767379080-f79ee8e8e4b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1703&q=80",
+  "bg": "https://images.unsplash.com/photo-1572937286008-b19e379625e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
 
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Quiz conhecedor de filmes",
+  "description": "Teste os seus conhecimentos sobre cinema e descubra o quanto você sabe.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://media.giphy.com/media/3o7TKQ8kAP0f9X5PoY/giphy.gif",
+      "title": "Que ator interpretou o personagem principal Andy Dufresne, que era um detento preso injustamente acusado de matar sua esposa, no filme 'Um Sonho de Liberdade'?",
+      "description": "",
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Morgan Freeman",
+        "Sean Penn",
+        "Sean Connery",
+        "Tim Robbins",
+        "Nicolas Cage"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://media.giphy.com/media/13BCR5PcAJjYwo/giphy.gif",
+      "title": "O filme 'O Pianista', conta a história de um pianista judeu polonês, perseguido na segunda guerra mundial, se refugiando em prédios abandonados espalhados pela cidade. Quem interpreta Wladyslaw Szpilman, o pianista?",
+      "description": "",
+      "answer": 2,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Aaron Eckhart",
+        "Dennis Quaid",
+        "Adrien Brody",
+        "Leonardo di Caprio",
+        "Ewan McGregor"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3ohc0XpXVcXi3Q7eBG/giphy.gif",
+      "title": "Qual dos atores abaixo NÃO participou no filme 'Seven - Os Sete Crimes Capitais' onde dois policiais são encarregados de uma periogosa investigação: encontrar um serial killer que mata as pessoas seguindo a ordem dos sete pecados capitais.",
+      "description": "",
+      "answer": 4,
+      "alternatives": [
+        "Brad Pitt",
+        "Gwyneth Paltrow",
+        "Morgan Freeman",
+        "Kevin Spacey",
+        "Scarlett Johansson"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xULW8kFzkDr9bo5zfq/giphy.gif",
+      "title": "Qual atriz brasileira participa do filme 'Eu sou a Lenda', ao lado de Will Smith?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Morena Baccarin",
+        "Alice Braga",
+        "Rebecca da Costa",
+        "Fernanda Montenegro",
+        "Sônia Braga"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3ohc1fZsTlteLGAvZu/giphy.gif",
+      "title": "Qual dos filmes abaixo NÃO foi estrelado por Gary Oldman?",
+      "description": "",
+      "answer": 4,
+      "alternatives": [
+         "O Quinto Elemento",
+         "Drácula de Bram Stoker",
+         "O Livro de Eli",
+         "Harry Potter",
+         "O Senhor dos Anéis"
       ]
     }
   ],
@@ -32,12 +75,12 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
-      "mainBg": "#171B35",
+      "primary": "#00e5ff",
+      "secondary": "#0d47a1",
+      "mainBg": "rgb(0, 0, 0, 0.7)",
       "contrastText": "#FFFFFF",
-      "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "wrong": "#f44336",
+      "success": "#00e676"
 
     },
     "borderRadius": "4px"
