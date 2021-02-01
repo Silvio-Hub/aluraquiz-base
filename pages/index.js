@@ -1,4 +1,8 @@
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+
 import db from '../db.json'
 import Widget from '../src/components/Widget/index'
 import Footer from '../src/components/Footer'
@@ -31,24 +35,50 @@ export const QuizContainer = styled.div`
 
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Quiz </title>
+      </Head>
       <QuizContainer>
+        <QuizLogo />
+        
         <Widget>
           <Widget.Header>
-            <h1>Primeira aula imersão react alura!</h1>
+            <h1>Segunda aula imersão react alura!</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Estou participando *-*</p>
+            <form onSubmit={function(infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`quiz?name=${name}`);
+              console.log('Fazendo uma submissao através do react');
+            }}
+            >
+              <input 
+                onChange={function(infosDoEvento) {
+                  //name = infosDoEvento.target.value;
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="Seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Play
+                {/* {name} */}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
+
         <Widget>
           <Widget.Content>
-          <h1>Primeira aula imersão alura!</h1>
+          <h1>Segunda aula imersão alura!</h1>
           
           <p>Partiu aprender?</p>
           </Widget.Content>
         </Widget>
+
         <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/silvio-hub" />
